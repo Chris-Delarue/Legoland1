@@ -1,0 +1,194 @@
+body{
+  background-color:black;
+}
+@font-face {font-family: "STARWARS";
+ src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
+
+@font-face {
+  font-family: 'ninjago';
+  src: url('http://www.fontsaddict.com/fontface/ninjago.ttf');
+font-display:auto;
+  font-weight: normal;
+    font-style: normal;
+  }
+
+h1{
+margin-top:200px;
+font-size:50px;
+color: white;
+padding:0px;
+text-align:center;
+font-family: 'Legothick';
+}
+
+h2{
+  margin:30px;
+  font-size:30px;
+  color:blue;
+  padding:0px;
+}
+
+a:active/* quand le visiteur clique sur le lien*/{
+  background-color:blue;
+  }
+a:visited/* quand le visiteur a deja vue la page concernée*/{
+  background-color:#AAA;
+  
+}
+nav ul{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+  }
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  font-size:30px;
+}
+div{
+  width:auto;
+  margin:auto;
+  height: auto;
+
+}
+nav{
+  -webkit-backface-visibility:hidden;
+z-index:10;
+  width: 100%;
+  margin:auto;
+  opacity: .95;
+  position:fixed;
+  top:0px;
+  background:#e2faf4;
+  border-radius:50px;
+
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 40px;
+  color: black;
+  font-size:30px;
+
+ }
+
+.star{
+  font-family:'STARWARS';
+}
+.nin{
+  font-family:'ninjago';
+}
+.HarryP{
+  font-family:'Harry P';
+}
+.lcity{
+  font-family:'Legothick';
+}
+.star:hover{
+  border-top:10px solid;
+  background-color: RGBa(62,51,6,1);
+  border-radius:50px;
+}
+.nin:hover {
+  border-top:10px solid;
+  background-color:RGBa(241,139,19,35);
+  border-radius:50px;
+
+}
+.HarryP:hover{
+  border-top:10px solid;
+  background-color:RGBa(236,42,32,71);
+  border-radius:50px;
+  }
+.lcity:hover{
+  border-top:10px solid;
+  background-color:RGBa(131,141,234,15);
+  border-radius:50px;
+}
+nav li:hover a{
+   padding:10px 50px 20px 30px;
+  color:white;
+  border-radius:50px;
+}
+
+#starwars{
+  font-family:'STARWARS';
+
+}
+#ninjago{
+  font-family:'Ninjago';
+  
+}
+#HarryP{
+  font-family:'Harry P';
+   
+}
+#Legocity{
+  font-family:'LegoThick';
+   
+  }
+ 
+div.ST{
+background-image :url("http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG43.png"); 
+background-size:700px;
+height:400px;
+background-repeat: no-repeat;
+margin-top:60px;
+
+}
+div.NI{
+background-image: url("https://www.actualitte.com/images/actualites/images/Laure%20images/ninjago-lego-film.jpg"); 
+background-repeat: no-repeat;
+background-size:700px;
+height:400px;
+}
+div.HP{
+  background-image: url("https://www.nicepng.com/png/full/786-7868203_lego-harry-potter-hogwarts-whomping-willow-light.png");
+background-repeat: no-repeat;
+background-size:700px;
+height:400px;
+
+
+}
+div.LG{
+   background-image: url("https://static.turbosquid.com/Preview/001294/516/06/_D.jpg");
+background-repeat: no-repeat;
+background-size:700px;
+height:500px;
+
+
+}
+
+#progressBarControl{
+  color: black;
+  border: yellow solid;
+  border-radius:50%;
+  text-align:center;
+
+      }
+#progressBar{
+  background-color:yellow;
+  border-radius:50%;
+  background-repeat: repeat;
+  font-family: 'STARWARS';
+  
+
+}
+
+button{
+  color:yellow;
+  background-color:black;
+  border-radius:20px;
+  display:inline-block;
+  font-family: 'STARWARS';
+ } 
+#container{
+display: flex;
+    flex-direction: column;
+   width:700px;
+}
+.center{
+  text-align: center;
+}

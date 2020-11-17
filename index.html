@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html lang="fr">  
+<head>  
+    <meta  charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+  <title>LILIAM'S WORLD</title>
+  <script src="sitelego.js"></script>
+  <link rel="stylesheet" href="sitelego.css"/>
+ 
+   <link href="//db.onlinewebfonts.com/c/181ef9a7aee45c119e68f294e8426a3a?family=Harry+P" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/419f9a909ea75fd5eb1d85a9a8a349f0?family=Legothick" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <h1>LEGOLAND</h1>
+      
+      <div>
+       <nav>
+        <ul class="nav"> 
+          <li class="star"><a href="#starwars">STAR WARS</a></li>
+          <li class="nin"><a href="#ninjago">NINJAGO</a></li>
+          <li class="HarryP"><a href="#HarryP">HARRY POTTER</a></li>
+          <li class="lcity"><a href="#Legocity">LEGO CITY</a></li></ul>
+      </nav>
+    </div>
+    </header>
+    <div id="container">
+    <section id="starwars">
+      <div class="ST">
+      <h2><a href="starwars.html">STAR WARS</a></h2>
+      
+      <audio  id="audioPlayer" ontimeupdate="update(this)">
+    <source src="https://www.dinosoria.com/cinema/StarWars%20Start%20Windows.ogg" type="audio/ogg" />
+    <source src="https://www.dinosoria.com/cinema/StarWars%20Start%20Windows.mp3" type="audio/mpeg" />
+    		</audio> 
+        <div class="center">
+	<button  class="control" onclick="play('audioPlayer', this)">Play</button>
+	<button  class="control" onclick="resume('audioPlayer')">Stop</button>
+</div>
+	<div id="progressBarControl">
+    <div id="progressBar">Play You Will Click</div>
+  </div>
+</div>
+ </section> 
+ <br/>
+    <section  id="ninjago">
+      <div class="NI">
+      <h2>NINJAGO</h2>
+      
+       </section>
+      
+    <section id="HarryP">
+      <div class="HP">
+        <h2>HARRY POTTER</h2>
+        
+          </div>
+        </section>
+  
+
+    <section id="Legocity">
+        <div class="LG">
+      <h2>LEGO CITY</h2>
+     
+         </div>
+           </div>
+     </div>
+   </section>
+   <footer>
+    
+   </footer>
+ 
+  </body>
+
+</html>
+
