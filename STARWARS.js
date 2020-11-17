@@ -13,7 +13,7 @@ for(i=0;i<bylineArr.length;i++){                                    // Loop for 
     byline.appendChild(letter);                 // ...Add the space without a span
   } else {
         span.appendChild(letter);                       // Add the letter to the span
-    byline.appendChild(span);                   // Add the span to the h2
+        byline.appendChild(span);                // Add the span to the h2
   }
 }
 var player = document.querySelector('#audioplayer');

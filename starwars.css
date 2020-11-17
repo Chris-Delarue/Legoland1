@@ -2,80 +2,84 @@
 
 
 @font-face {font-family: "STARWARS"; 
-src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), 
+     url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
 h1{
-	color: yellow;
-	font-family:'STARWARS';
-	font-size:70px;
-	text-align: center;
+	  color: yellow;
+	  font-family:'STARWARS'; 
+	  font-size:70px;
+	  text-align: center;
 }
 h2{
-	font-family:'STARWARS';
-	color: yellow;
-	margin-left:0px;
+	  font-family:'STARWARS';
+	  color: yellow;
+	  margin-left:0px;
 }
 #starwars{
-  font-family:'STARWARS';
-  }
+    font-family:'STARWARS';
+}
 p{
-  margin:50px;
-  font-size:25px;
-  color:white;
-  width:80%;
-  font-family:'STARWARS';
-  text-align: justify;
+    margin:50px;
+    font-size:25px;
+    color:white;
+    width:80%;
+    font-family:'STARWARS';
+    text-align: justify;
 }
 #container{
-display: flex;
+    display: flex;
     flex-direction: column;
-   width:700px;
+    width:700px;
 }
 
 div{
-  width:auto;
-  margin:auto;
-  height: auto;
-
+    width:auto;
+    margin:auto;
+    height: auto;
 }
 #progressBarControl{
-  color: black;
-  border: yellow solid;
-  border-radius:50%;
-  text-align:center;
+    color: black;
+    border: yellow solid;
+    border-radius:50%;
+    text-align:center;
 
       }
 #progressBar{
-  background-color:yellow;
-  border-radius:50%;
-  background-repeat: repeat;
-  font-family: 'STARWARS';
+    background-color:yellow;
+    border-radius:50%;
+    background-repeat: repeat;
+    font-family: 'STARWARS';
   
 }
 
 button{
-  color:yellow;
-  background-color:black;
-  border-radius:20px;
-  display:inline-block;
-  font-family: 'STARWARS';
+    color:yellow;
+    background-color:black;
+    border-radius:20px;
+    display:inline-block;
+    font-family: 'STARWARS';
  } 
  .center{
-  text-align: center;
+    text-align: center;
 }
 
 
   /* Animation properties */
 .star {
-  animation: star 10s ease-out infinite;
+    animation: star 10s ease-out infinite;
 }
 .wars {
-  animation: wars 10s ease-out infinite;
+    animation: wars 10s ease-out infinite;
 }
 .byline span {
-  animation: spin-letters 10s ease-out infinite;
+    animation: spin-letters 10s ease-out infinite;
 }
 .byline {
-  animation: move-byline 10s ease-out infinite;
+    animation: move-byline 10s ease-out infinite;
 }
 
 /* Keyframes */
@@ -153,57 +157,57 @@ button{
 
 /* Make the 3D work on the container */
 .starwars-demo {
-  perspective: 800px;
-  transform-style: preserve-3d;
+    perspective: 800px;
+    transform-style: preserve-3d;
 }
 
 /* General styles and layout */
 body {
-  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
-background-repeat: repeat;
+    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+    background-repeat: repeat;
 }
 
 .starwars-demo {
-  height: 17em;
-  left: 50%;
-  position: absolute;
-  top: 53%;
-  transform: translate(-50%, -50%);
-  width: 34em;
+    height: 17em;
+    left: 50%;
+    position: absolute;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    width: 34em;
 
 }
 
 .byline span {
-  display: inline-block;
+    display: inline-block;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .star, .wars, .byline {
-  position: absolute;
+    position: absolute;
 
 }
 
 .star {
-  top: -0.75em;
+    top: -0.75em;
 }
 
 .wars {
-  bottom: -0.5em;
+    bottom: -0.5em;
 }
 
 .byline {
-  color: yellow;
-  font-family:"ITC Serif Gothic", 'starwars';
-  font-size: 2.25em;
-  left: -2em;
-  letter-spacing: 0.4em;
-  right: -2em;
-  text-align: center;
-  text-transform: uppercase;
-  top: 29%;
+    color: yellow;
+    font-family:"ITC Serif Gothic", 'starwars';
+    font-size: 2.25em;
+    left: -2em;
+    letter-spacing: 0.4em;
+    right: -2em;
+    text-align: center;
+   text-transform: uppercase;
+    top: 29%;
   
 }
 
