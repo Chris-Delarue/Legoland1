@@ -36,5 +36,6 @@ function update(player) {
     progress.style.width = percent + '%';
     progress.textContent = percent + '%';
     
+    
 
     }

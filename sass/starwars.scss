@@ -1,61 +1,92 @@
 
-
-
+/* General styles and layout */
+html,body {
+    background:#000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+    font-family:'STARWARS';
+    margin:0;
+    padding:0;
+}
+.starwars-demo {
+    height: 17em;
+    left: 50%;
+    position: absolute;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    width: 34em;
+}
+.byline span {
+    display: inline-block;
+}
+.starwars-demo img {
+    width: 100%;
+}
+.star, .wars, .byline {
+    position: absolute;
+}
+.star {
+    top: -0.75em;
+}
+.wars {
+    bottom: -0.5em;
+}
+.byline {
+    color: yellow;
+    font-family:"ITC Serif Gothic", 'starwars';
+    font-size: 2.25em;
+    left: -2em;
+    letter-spacing: 0.4em;
+    right: -2em;
+    text-align: center;
+   text-transform: uppercase;
+    top: 29%;
+}
 @font-face {font-family: "STARWARS"; 
     src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); 
     src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), 
-     url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
     url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), 
     url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
+    url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); 
+  }
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+}
 h1{
 	  color: yellow;
-	  font-family:'STARWARS'; 
 	  font-size:70px;
 	  text-align: center;
 }
-h2{
-	  font-family:'STARWARS';
+h3{
 	  color: yellow;
-	  margin-left:0px;
-}
-#starwars{
-    font-family:'STARWARS';
+	  margin-left:5%;
 }
 p{
     margin:50px;
     font-size:25px;
     color:white;
     width:80%;
-    font-family:'STARWARS';
     text-align: justify;
 }
-#container{
-    display: flex;
-    flex-direction: column;
-    width:700px;
-}
 
-div{
-    width:auto;
-    margin:auto;
-    height: auto;
-}
+
+/*MUSIC*/
+
 #progressBarControl{
     color: black;
     border: yellow solid;
     border-radius:50%;
     text-align:center;
-
-      }
+}
 #progressBar{
     background-color:yellow;
     border-radius:50%;
     background-repeat: repeat;
     font-family: 'STARWARS';
-  
 }
-
 button{
     color:yellow;
     background-color:black;
@@ -161,55 +192,7 @@ button{
     transform-style: preserve-3d;
 }
 
-/* General styles and layout */
-body {
-    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
-    background-repeat: repeat;
-}
 
-.starwars-demo {
-    height: 17em;
-    left: 50%;
-    position: absolute;
-    top: 53%;
-    transform: translate(-50%, -50%);
-    width: 34em;
-
-}
-
-.byline span {
-    display: inline-block;
-}
-
-img {
-    width: 100%;
-}
-
-.star, .wars, .byline {
-    position: absolute;
-
-}
-
-.star {
-    top: -0.75em;
-}
-
-.wars {
-    bottom: -0.5em;
-}
-
-.byline {
-    color: yellow;
-    font-family:"ITC Serif Gothic", 'starwars';
-    font-size: 2.25em;
-    left: -2em;
-    letter-spacing: 0.4em;
-    right: -2em;
-    text-align: center;
-   text-transform: uppercase;
-    top: 29%;
-  
-}
 
 /*** Media queries for adjusting to different screen sizes ***/
 

@@ -1,0 +1,301 @@
+html, body{
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    background-color:black;
+  }
+  @font-face {font-family: "STARWARS";
+      src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); 
+      src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), 
+      url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
+      url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), 
+      url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), 
+      url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
+  
+  @font-face {
+      font-family: 'ninjago';
+      src: url('http://www.fontsaddict.com/fontface/ninjago.ttf');
+      font-display:auto;
+      font-weight: normal;
+      font-style: normal;
+    }
+  /*HEADER*/
+ .navnav .nav{
+    clear: both;
+    max-height:0;
+    transition: max-height .2s ease-out;
+ }
+ .navnav .menu-icon{
+    cursor: pointer;
+    display:block;
+    float:left;
+    position: relative;
+    user-select:none;
+    padding: 15px 15px;
+ }
+.navnav .menu-icon .navicon{
+    background:#333;
+    display: block;
+    height:2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width:15px;
+}
+.navnav .menu-icon .navicon:before,
+.navnav .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navnav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navnav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.navnav .menu-btn {
+  display: none;
+}
+
+.navnav .menu-btn:checked ~ .nav {
+  max-height: 300px;
+}
+
+.navnav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navnav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navnav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navnav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navnav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+
+  nav ul{
+      display:flex;
+      flex-flow:wrap;
+      justify-content: space-evenly;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      text-align: center;
+  }
+  nav li {
+      list-style-type: none;
+      font-size:30px;
+  }
+  nav{
+      z-index:10;
+      width: 100%;
+      margin:auto;
+      opacity: .95;
+      position:fixed;
+      top:0px;
+      background:#e2faf4;
+      border-radius:50px;
+  }
+  nav a{
+      display: inline-block;
+      text-decoration: none;
+      padding: 20px 40px;
+      color: black;
+      font-size:30px;
+   }
+  
+  .star{
+      font-family:'STARWARS';
+  }
+  .nin{
+      font-family:'ninjago';
+  }
+  .HarryP{
+      font-family:'Harry P';
+  }
+  .lcity{
+      font-family:'Legothick';
+  }
+  .star:hover{
+      border-top:10px solid;
+      background-color:greenyellow;
+      border-radius:50px;
+  }
+  .nin:hover {
+      border-top:10px solid;
+      background-color:orange;
+      border-radius:50px;
+  
+  }
+  .HarryP:hover{
+      border-top:10px solid;
+      background-color:red;
+      border-radius:50px;
+    }
+  .lcity:hover{
+      border-top:10px solid;
+      background-color:blue;
+      border-radius:50px;
+  }
+  nav li:hover a{
+      padding:10px 50px 20px 30px;
+      color:white;
+      border-radius:50px;
+  }
+  
+  /*H*/
+  
+  h1{
+      margin-top:15%;
+      font-size:50px;
+      color: white;
+      padding:0px;
+      text-align:center;
+      font-family: 'Legothick';
+  }
+  h2{
+      margin:30px;
+      font-size:30px;
+      color:blue;
+      padding:0px;
+  }
+  
+  /*ACTIVATION BUTTON*/
+  
+  a:active/* quand le visiteur clique sur le lien*/{
+      background-color:blue;
+    }
+  a:visited/* quand le visiteur a deja vue la page concernée*/{
+      background-color:#AAA;
+  }
+  
+  /*MAIN MENU*/
+  
+  #container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      width:auto;
+      margin:0;
+      padding:0;    
+  }
+  /*STARWARS*/
+  
+  .ST{
+      font-family:'STARWARS';
+      border:solid 1px red;
+      width:60%;
+      margin-left:20%;
+  }
+  .st_image img{
+      width:100%;
+      height:400px;
+      background-repeat: no-repeat;
+  }
+  .ST a{
+      text-decoration: none;
+      color:yellow;
+  }
+  
+  /*MUSIC STARWARS*/
+  
+  
+  #progressBarControl{
+      color: black;
+      border: yellow solid;
+      border-radius:50%;
+      text-align:center;
+  }
+  
+  #progressBar{
+      background-color:yellow;
+      border-radius:50%;
+      background-repeat: repeat;
+      font-family: 'STARWARS';
+  }
+  button{
+      color:yellow;
+      background-color:black;
+      border-radius:20px;
+      display:inline-block;
+      font-family: 'STARWARS';
+   } 
+  .center{
+      text-align: center;
+  }
+  
+  /*NINJAGO*/
+  
+  #ninjago{
+      font-family:'Ninjago';
+  }
+  div.NI{
+      background-image: url("https://www.actualitte.com/images/actualites/images/Laure%20images/ninjago-lego-film.jpg"); 
+      background-repeat: no-repeat;
+      background-size:100%;
+      height:400px;
+  }
+  
+  /*HARRYPOTTER*/
+  
+  #HarryP{
+      font-family:'Harry P'; 
+  }
+  div.HP{
+      background-image: url("https://www.nicepng.com/png/full/786-7868203_lego-harry-potter-hogwarts-whomping-willow-light.png");
+      background-repeat: no-repeat;
+      background-size:100%;
+      height:400px;
+  }
+  
+  
+  /*LEGOCITY*/
+  
+  
+  #Legocity{
+      font-family:'LegoThick';
+  }
+   
+  div.LG{
+      background-image: url("https://static.turbosquid.com/Preview/001294/516/06/_D.jpg");
+      background-repeat: no-repeat;
+      background-size:100%;
+      height:500px;
+  }
+  /* 48em = 768px */
+
+@media (min-width: 48em) {
+  .navnav li {
+    text-align: center;
+  }
+  .navnav li a {
+    padding: 20px 30px;
+  }
+  .navnav .nav {
+    clear: none;
+    text-align: center;
+    max-height: none;
+  }
+  .navnav .menu-icon {
+    display: none;
+  }
+}
+  
+  
